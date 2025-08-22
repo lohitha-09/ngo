@@ -1,0 +1,20 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    nav.navbar
+      .nav-container
+        a.nav-brand(href='/') NGO Portal
+        ul.nav-menu
+          li.nav-item(class=title=='Home' ? 'active' : '')
+            a(href='/') Home
+          li.nav-item(class=title=='About Us' ? 'active' : '')
+            a(href='/about') About
+          li.nav-item(class=title=='Volunteer Management' ? 'active' : '')
+            a(href='/volunteers') Volunteers
+          li.nav-item(class=title=='Impact Reports' ? 'active' : '')
+            a(href='/impact') Impact
+    .container
+      block content
